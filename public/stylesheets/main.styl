@@ -1,0 +1,120 @@
+body
+  font 15px Helvetica
+  background url(/images/body.png)
+#main
+  width 800px
+  margin auto
+  position relative
+#node
+  position absolute
+  left 0
+  top 0
+#lb
+  position absolute
+  right 0
+  top 30px
+#node, #lb
+  opacity 0
+  -webkit-transform scale(.5) rotate(10deg)
+  -webkit-transition opacity 500ms ease, -webkit-transform 500ms ease
+body.loaded
+  #node, #lb
+    opacity 1
+    -webkit-transform scale(1) rotate(0)
+#header
+  height 180px
+
+.chat
+  background #eee
+  border-radius 10px
+  box-shadow 0 0 10px rgba(black, .5)
+  padding 10px
+
+#chat
+  width 400px
+  margin auto
+
+button
+  display inline-block
+  text-decoration none
+  background-color #eee
+  background-image linear-gradient(top, #EEE, #CCC)
+  border 1px solid #ccc
+  border-bottom 1px solid #bbb
+  border-radius 3px
+  color #333
+  font bold 11px Lucida Grande
+  line-height .3
+  padding 0 15px
+  height 20px
+  text-align center
+  text-shadow 0 1px 0 #EEE
+  &:hover
+    background-color #dddddd;
+    background-image linear-gradient(top, #dddddd, #bbbbbb)
+    border 1px solid #bbb
+    border-bottom 1px solid #999
+    cursor pointer
+    text-shadow 0 1px 0 #ddd
+  &:active
+    border 1px solid #aaa
+    border-bottom 1px solid #888
+    box-shadow inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee
+
+.chat
+  .messages
+    margin-top 0
+    border 2px dashed #ccc
+    height 200px
+    padding 0
+    overflow auto
+    li
+      list-style-type none
+      font 11px Lucida Grande
+      padding 4px 8px
+    li:nth-child(even)
+      background rgba(#ccc, .4)
+  form
+    padding 0
+    margin 0
+    position relative
+    input
+      box-sizing border-box
+      width 100%
+      line-height 25px
+      height 30px
+      margin-right 5px
+    button
+      position absolute
+      right 5px
+      top 5px
+  opacity 0
+  -webkit-transform scale(.5) rotate(10deg)
+  -webkit-transition opacity 500ms ease, -webkit-transform 500ms ease
+  &.highlight
+    opacity 1
+    -webkit-transform scale(1) rotate(0)
+
+#chats .chat
+  width 335px
+  display inline-block
+  margin 20px
+  .messages
+    height 150px
+
+#about
+  text-align center
+  font-size 30px
+  font-family Georgia
+  text-shadow 0 2px 0 #000
+  h2
+    color #666
+  h3
+    color #999
+  h4
+    color #ccc
+  h2, h3, h4
+    font-weight normal
+  em
+    font-style normal
+    color #666

@@ -1,0 +1,11 @@
+{
+    "name": "oscon-chat"
+  , "version": "0.0.1"
+  , "dependencies": {
+        "express": "2.4.1"
+      , "jade": "0.12.4"
+      , "stylus": "0.13.5"
+      , "nib": "0.0.8"
+      , "socket.io": "0.7.7"
+    }
+}

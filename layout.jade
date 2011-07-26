@@ -1,0 +1,15 @@
+
+doctype 5
+html
+  head
+    title Socket.IO
+    link(href="/stylesheets/main.css", rel="stylesheet", media="screen")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascript/main.js")
+  body
+    #main
+      #header
+        a(href="http://nodejs.org"): img#node(src="/images/logo-node.png")
+        a(href="http://learnboost.com"): img#lb(src="/images/logo-lb.png")
+      != body
